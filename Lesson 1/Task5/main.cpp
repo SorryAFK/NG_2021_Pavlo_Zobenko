@@ -11,20 +11,21 @@ int main()
    cin >> num1;
    cout << "Enter second number: " << endl;
    cin >> num2;
-   cout << "Enter 1 if u want +.\nEnter 2 if u want -. \nEnter 3 if u want *. \nEnter 4 if u want /." << endl;
+   cout << "Enter 1 if u want +." << endl << "Enter 2 if u want -." << endl << "Enter 3 if u want *."<< endl << "Enter 4 if u want /." << endl;
    cin >> deistvie;
+   cout << "Resultat: ";
    switch ( deistvie ){
    case 1:
-       cout << "resultat +: " << num1 + num2 << endl;
+       cout << num1 + num2 << endl;
        break;
    case 2:
-       cout << "resultat -: " << num1 - num2 << endl;
+       cout << num1 - num2 << endl;
        break;
    case 3:
-       cout << "resultat *: " << num1 * num2 << endl;
+       cout << num1 * num2 << endl;
        break;
    case 4:
-       cout << "resultat /: " << num1 / num2 << endl;
+       cout << num1 / num2 << endl;
        break;
    }
 }
