@@ -31,6 +31,9 @@ int main()
        cout << num1 / num2 << endl;
        break;
    case 5 ... 10000:
-       cout << " Error! "  << endl;
+       cout << "Error!" << endl;
+       break;
+   case 0:
+       cout << "Error!" << endl;
    }
 }
