@@ -4,12 +4,12 @@ using namespace std;
 
 int main()
 {
-    int i;
-    int zvezda;
-    cout << "Skolko0 zvezd hotite videt?" << endl;
-    cin >> zvezda;
-    for ( i = 1; i <= zvezda; i++){
-        cout << "*";
-    }
-    return 0;
+   int num;
+   int i;
+   cout << "Enter number: " << endl;
+   cin >> num;
+   cout << "Numbers: ";
+   for (i = 0; i <= num; i++){
+       cout << i << " ";
+   }
 }
