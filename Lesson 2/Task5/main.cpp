@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-    int size;
-    int nline;
-    int zvezda;
-    int probel;
+    int size = 0;
+    int nline = 0;
+    int zvezda = 0;
+    int probel = 0;
     cout << "enter size: ";
     cin >> size;
 

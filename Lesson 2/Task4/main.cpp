@@ -4,22 +4,21 @@ using namespace std;
 
 int main()
 {
-    int size;
-    int i;
-    int zvezda;
-    int probel;
+    int size = 0;
+    int zvezda = 0;
+    int probel = 0;
     cout << "Enter size:";
     cin >> size;
 
-    for(i = 0; i < size; i++){
+    for(int i = 0; i < size; i++){
         for (zvezda = 0; zvezda <= i; zvezda++){
-             cout << "*";
+            cout << "*";
         }
         cout << endl;
     }
     cout << endl;
 
-    for (i = 0; i < size; i++){
+    for (int i = 0; i < size; i++){
         for (zvezda = size; zvezda > i; zvezda--){
             cout << "*";
         }
@@ -27,7 +26,7 @@ int main()
     }
     cout << endl;
 
-    for (i = 0; i < size; i++){
+    for (int i = 0; i < size; i++){
         for (probel = 0; i > probel; probel++){
             cout << " ";
         }
@@ -38,7 +37,7 @@ int main()
     }
     cout << endl;
 
-    for (i = 0; i < size; i++){
+    for (int i = 0; i < size; i++){
         for (probel = size - 1; i < probel; probel--){
             cout << " ";
         }
