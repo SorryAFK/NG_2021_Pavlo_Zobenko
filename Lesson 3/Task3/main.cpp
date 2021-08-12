@@ -6,27 +6,23 @@ int main()
 {
     int num[5];
     int maximum = 0;
-    cout << "Vedite 5 chisel:" << endl;
+    cout << "Vedite 5 chisel: ";
     for (int i = 0; i < 5; i++) {
         cout << "[" << i + 1 << "]" << ": ";
         cin >> num[i];
-        if(maximum < num[i]){
+        if(maximum < num[i]) {
             maximum = num[i];
         }
     }
-        for (int i = 0; i < maximum; i++)
-        {
-            for (int entr = 0; entr < 5; entr++) {
-                if (num[entr] - 1 < i)
-                {
-                    cout << " ";
-                }
-                else
-                {
-                    cout << "*";
-                }
+    for (int i = 0; i < maximum; i++) {
+        for (int entr = 0; entr < 5; entr++) {
+            if (num[entr] - 1 < i) {
+                cout << " ";
             }
-            cout << endl;
-        }
-
+            else {
+                cout << "*";
+            }
+         }
+        cout << endl;
+    }
 }
