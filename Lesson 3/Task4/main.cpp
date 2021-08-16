@@ -8,16 +8,28 @@ int main()
     int maximum = 0;
     cout << "Values: ";
     int iteratacii = 0;
-    for (iteratacii = 0; iteratacii < 20; iteratacii++) {
-        cout << "[" << iteratacii + 1 << "]" << ": ";
-        cin >> num[iteratacii];
-        if(num[iteratacii] <= 0) {
+    for(;;){
+        for (; iteratacii < 20; iteratacii++) {
+            cout << "[" << iteratacii + 1 << "]" << ": ";
+            cin >> num[iteratacii];
+            if(maximum < num[iteratacii]) {
+                maximum = num[iteratacii];
+            }
+            if(num[iteratacii] == 0) {
+                break;
+            }
+            if(num[iteratacii] < 0){
+                cout << "Error! Enter number above zero!!!!!" << endl;
+                break;
+            }
+
+        }
+        if (iteratacii == 20 || num[iteratacii] == 0) {
             break;
         }
-        if(maximum < num[iteratacii]) {
-            maximum = num[iteratacii];
-        }
     }
+
+
     for(int i = 0; i < iteratacii; i++) {
         for(int enter = 0; enter <= (maximum  - (num[i] + enter)); enter++) {
             cout << " ";
