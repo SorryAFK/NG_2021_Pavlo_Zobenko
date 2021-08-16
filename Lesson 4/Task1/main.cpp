@@ -20,6 +20,16 @@ int main()
             simvol = 0;
         }
         i++;
+        if(simvol == 0){
+            if(text[i] >= 'A' && text[i] <= 'Z'){
+                simvol = 1;
+                slov++;
+            }
+        }
+        else if(text[i] >= ' ' && text[i] <= '@'){
+            simvol = 0;
+        }
+        i++;
     }
     cout << slov;
 }
