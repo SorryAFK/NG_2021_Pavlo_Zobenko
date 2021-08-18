@@ -8,7 +8,7 @@ int main()
     int maximum = 0;
     cout << "Values: ";
     int iteratacii = 0;
-    for(;;){
+    while(true) {
         for (; iteratacii < 20; iteratacii++) {
             cout << "[" << iteratacii + 1 << "]" << ": ";
             cin >> num[iteratacii];
@@ -38,6 +38,5 @@ int main()
             cout << "*";
         }
         cout << endl;
-        continue;
     }
 }
