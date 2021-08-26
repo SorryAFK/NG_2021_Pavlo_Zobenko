@@ -11,11 +11,8 @@ int main()
     cin.getline(text,50);
     while(text[i] != 0){
         if(simvol == 0){
-            if(text[i] >= 'A' && text[i] <= 'Z'){
-                simvol = 1;
-                slov++;
-            }
-            if(text[i] >= 'a' && text[i] <= 'z'){
+            if(text[i] >= 'A' && text[i] <= 'Z' ||
+               text[i] >= 'a' && text[i] <= 'z'){
                 simvol = 1;
                 slov++;
             }

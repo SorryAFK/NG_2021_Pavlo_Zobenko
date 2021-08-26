@@ -6,10 +6,11 @@ int main()
 {
     int num[5];
     int maximum = 0;
-    int i = 0;
+    int i = -1;
     cout << "Vedite 5 chisel: ";
     while(true) {
-        for (; i < 5; i++) {
+        while (i < 4) {
+            i++;
             cout << "[" << i + 1 << "]" << ": ";
             cin >> num[i];
             if(maximum < num[i]) {
@@ -20,7 +21,7 @@ int main()
                 break;
             }
         }
-        if(i == 5){
+        if(i == 4){
             break;
         }
     }
